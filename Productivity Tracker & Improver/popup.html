@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Site Time Tracker</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 10px; font-size: 18px; } /* Increased font size to 18px */
+    .site { margin: 10px 0; }
+    select, input { margin-bottom: 15px; font-size: 18px; } /* Set font size for select and input elements */
+    button { margin: 10px 0; font-size: 18px; } /* Set font size for button */
+  </style>
+</head>
+<body>
+  <h1>Time Spent on Sites</h1>
+
+  <label for="daySelect">Select Day:</label>
+  <select id="daySelect"></select>
+  
+  <button id="refreshButton">Refresh Data</button>
+
+  <div id="siteList"></div>
+
+  <h2>Set Time Limit</h2>
+  <label for="siteSelect">Select Site:</label>
+  <select id="siteSelect"></select>
+  <br>
+  <label for="hoursInput">Hours:</label>
+  <input type="number" id="hoursInput" min="0" value="0">
+  <label for="minutesInput">Minutes:</label>
+  <input type="number" id="minutesInput" min="0" max="59" value="0">
+  <button id="setLimitButton">Set Time Limit</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
